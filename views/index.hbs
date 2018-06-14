@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MobilOko | Admin Panel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />-->
+    <!--<link rel="shortcut icon" href="http://smartacademy.kz/favicon.ico" type="image/x-icon">-->
+    <link rel='stylesheet' href='/stylesheets/normalize.css'/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+
+<div class="d-flex">
+    <div class="sidebar d-flex flex-column">
+        <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <img src="" alt="">
+                <h4 class="text-uppercase text-white">не израсходованно дней: 90</h4>
+                <p>Дни с общего счета можно перевести на устройство, чтобы начать или продолжить сбор информации</p>
+            </div>
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li id="element1" class="menu-element active"><a href="#">Главная</a></li>
+                <li id="element2" class="menu-element"><a href="#">Мои устройства</a></li>
+                <li id="element3" class="menu-element"><a href="#">Добавить устройство</a></li>
+                <li><!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Мои платежи (купить дни)</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li id="element4" class="menu-element"><a href="#">Купить дни (на общий счет)</a></li>
+                        <li id="element5" class="menu-element"><a href="#">Список транзакций</a></li>
+                    </ul>
+                </li>
+                <li><!-- Link with dropdown items -->
+                    <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">Мой аккаунт</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu3">
+                        <li id="element6" class="menu-element"><a href="#">Редактировать аккаунт</a></li>
+                        <li id="element7" class="menu-element"><a href="#">Удалить аккаунт безвозвратно</a></li>
+                    </ul>
+                </li>
+                <li><!-- Link with dropdown items -->
+                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">Мой заработок</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu2">
+                        <li class=""><a href="#">Заработано: 8547 USD</a></li>
+                        <li id="element8" class="menu-element"><a href="#">Статистика переходов</a></li>
+                        <li id="element9" class="menu-element"><a href="#">Вывод денег</a></li>
+                        <li id="element10" class="menu-element"><a href="#">Мои выплаты</a></li>
+                        <li id="element11" class="menu-element"><a href="#">Коды баннеров</a></li>
+                    </ul>
+                </li>
+                <li id="element12" class="menu-element"><a href="#">Карта</a></li>
+                <li id="element13" class="menu-element"><a href="#">Задать вопрос в поддержку</a></li>
+                <li class="menu-element"><a href="#">Выход</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="main-content d-flex flex-column w-100">
+        <div class="content-element main-section w-100 h-100">
+            <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                <div class="d-flex justify-content-around w-100">
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Карта</p>
+                    </a>
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Запись разговоров</p>
+                    </a>
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Перехват SMS</p>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-around w-100 mt-5">
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Включить микрофон</p>
+                    </a>
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Фото/Видео</p>
+                    </a>
+                    <a href="" class="item d-flex flex-column align-items-center">
+                        <div class="circle-with-icon">
+                        </div>
+                        <p class="text-center mt-4">Список контактов телефонов</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-element my-devices w-100 h-100">
+            <div class="some-info d-flex py-4 px-4 align-items-center">
+                <p class="text-uppercase font-weight-bold mb-0">собранные данные</p>
+                <div class="dropdown ml-5">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        КОММЕНТАРИЙ
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center" id="headingOne" data-toggle="collapse"
+                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button><img src="" alt="">Управление</button>
+                        <p class="mb-0 ml-5">Мой телефон</p>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body d-flex">
+                            <div class="left-side d-flex flex-column">
+                                <h5>Модель:</h5>
+                                <h5>Сбор данных:</h5>
+                                <h5>IDS:</h5>
+                                <h5>Оплачен до:</h5>
+                                <h5>Продлить:</h5>
+                            </div>
+                            <div class="right-side d-flex flex-column ml-3">
+                                <p>Sony LT29i</p>
+                                <div class="days text-uppercase text-white d-flex">
+                                    <h5 class="green-bg">Пн</h5>
+                                    <h5 class="green-bg">Вт</h5>
+                                    <h5 class="green-bg">Ср</h5>
+                                    <h5 class="green-bg">Чт</h5>
+                                    <h5 class="green-bg">Пт</h5>
+                                    <h5 class="orange-bg">Сб</h5>
+                                    <h5 class="orange-bg">вс</h5>
+                                </div>
+                                <p>18136965</p>
+                                <p>30 дней, 0 ч., 0 мин.</p>
+                                <button><img src="" alt="">Продлить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex align-items-center" id="heading2" data-toggle="collapse"
+                         data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <button><img src="" alt="">Управление</button>
+                        <p class="mb-0 ml-5">Мой планшет</p>
+                    </div>
+
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-element add-device w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="text-uppercase px-4 py-3 d-flex align-items-center">
+                    <button><img src="images/add.png" alt=""></button>
+                    добавить устройство
+                </h3>
+            </div>
+            <p class="px-4 py-2">Комментарий к устройству не более 40 символов</p>
+            <form class="w-100 d-flex flex-column px-4 py-5" action="">
+                <input placeholder="Мой планшет ASUS..." type="text" maxlength="40" required>
+                <p class="my-3">За этим устройством будет вестись наблюдение</p>
+                <button>Сохранить</button>
+            </form>
+        </div>
+        <div class="content-element buy-days w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="text-uppercase text-center py-4 px-4 font-weight-bold">купить дни (на общий счет)</h3>
+                <div class="sale-badges d-flex justify-content-around align-items-center px-4 py-5">
+                    <div class="item green-bg justify-content-center d-flex flex-column align-items-center">
+                        <h4 class="text-center text-white mb-0">Купите 90 дней</h4>
+                        <p class="text-center text-white mb-0">Получите скидку 5%</p>
+                    </div>
+                    <div class="item blue-bg justify-content-center d-flex flex-column align-items-center">
+                        <h4 class="text-center text-white mb-0">Купите 180 дней</h4>
+                        <p class="text-center text-white mb-0">Получите скидку 10%</p>
+                    </div>
+                    <div class="item orange-bg justify-content-center d-flex flex-column align-items-center">
+                        <h4 class="text-center text-white mb-0">Купите 360 и более дней</h4>
+                        <p class="text-center text-white mb-0">Получите скидку 20%</p>
+                    </div>
+                </div>
+                <h5 class="px-4 mt-3 font-weight-bold">Сколько дней хотите купить? (минимум 4 дня)</h5>
+                <form class="" action="">
+                    <input class="my-3 ml-4 input-days" type="number" min="4" required>
+                    <p class="px-4">Итого к оплате: <span class="font-weight-bold text-uppercase">2 USD</span></p>
+                    <h5 class="px-4">Каким способом будем платить?</h5>
+                    <div class="form-check px-5 py-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            INTERKASSA (рекомендуем) <br>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aliquam aperiam atque consectetur debitis dolor eius enim explicabo harum id, illo ipsam labore maxime modi, molestiae molestias nam nesciunt nihil optio pariatur porro quisquam repellat repellendus suscipit ut voluptate? Ab aliquam distinctio eaque facere hic obcaecati officiis perferendis perspiciatis?</span>
+                        </label>
+                    </div>
+                    <div class="form-check px-5 py-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            PAYPAL <br>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur distinctio dolores eaque eius enim eveniet, facere incidunt maxime mollitia officia quo, reprehenderit suscipit tempora veniam vitae voluptates! Distinctio, earum?</span>
+                        </label>
+                    </div>
+                    <div class="form-check px-5 py-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                               value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            QIWI <br>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam consectetur dolorem explicabo ipsum laboriosam laudantium quia recusandae tempore. Aperiam!</span>
+                        </label>
+                    </div>
+                    <h6 class="px-4 my-3">Выбрать валюту и способ оплаты вы сможете на следующем шаге</h6>
+                    <button class="ml-4">Продолжить</button>
+                </form>
+            </div>
+        </div>
+        <div class="content-element transaction-list w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class=" px-4 py-3 text-center text-uppercase font-weight-bold">Список транзакций</h3>
+                <div class="d-flex px-4 py-3">
+                    <form class="d-flex" action="">
+                        <input class="pl-2 mr-3" type="text" required>
+                        <button><img src="" alt="">Найти</button>
+                    </form>
+                    <button class="mx-3"><img src="" alt="">Сброс</button>
+                    <button class="green-button"><img src="" alt="">Скачать</button>
+                </div>
+                <table id="myTable">
+                    <tr>
+                        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                        <th onclick="sortTable(0)">ID</th>
+                        <th onclick="sortTable(1)">Дата</th>
+                        <th onclick="sortTable(2)">Операция</th>
+                    </tr>
+                    <tr>
+                        <td>0001</td>
+                        <td>21.05.17</td>
+                        <td>2orem ipsum dolor sit amet.</td>
+                    </tr>
+                    <tr>
+                        <td>00011</td>
+                        <td>13.07.18</td>
+                        <td>Dorem ipsum.</td>
+                    </tr>
+                    <tr>
+                        <td>0005</td>
+                        <td>14.01.17</td>
+                        <td>Zorem ipsum dolor sit amet, consectetur.</td>
+                    </tr>
+                    <tr>
+                        <td>0101</td>
+                        <td>03.05.18</td>
+                        <td>1orem ipsum dolor sit amet, consectetur adipisicing.</td>
+                    </tr>
+                    <tr>
+                        <td>0501</td>
+                        <td>22.11.17</td>
+                        <td>Lorem ipsum dolor.</td>
+                    </tr>
+                    <tr>
+                        <td>7206</td>
+                        <td>11.06.18</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="content-element modify-account w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="text-center text-uppercase font-weight-bold px-4 py-3">Редактировать аккаунт</h3>
+                <form class="d-flex flex-column px-4 pt-4" action="">
+                    <h4 class="font-weight-bold">Email<span>*</span></h4>
+                    <input class="mb-3" type="email" placeholder="demo@mobiletool.ru">
+                    <p>Для системных уведомлений и входа в систему</p>
+                    <p>Заполните эти три поля ниже, только если хотите сменить пароль:</p>
+                    <h4 class="font-weight-bold">Старый пароль<span>*</span></h4>
+                    <input class="mb-3" type="text">
+                    <h4 class="font-weight-bold">Новый пароль<span>*</span></h4>
+                    <input class="mb-3" type="text">
+                    <h4 class="font-weight-bold">Новый пароль еще раз<span>*</span></h4>
+                    <input class="mb-5" type="text">
+                    <button>Сохранить</button>
+                </form>
+            </div>
+        </div>
+        <div class="content-element delete-account w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="font-weight-bold text-center text-uppercase px-4 py-3">удаление аккаунта</h3>
+                <div class="badge-delete d-flex flex-column px-4 py-5">
+                    <h4 class="text-white font-weight-bold">Желаете удалить свой аккаунт безвозвратно?</h4>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores
+                        eos ex, illum in
+                        iusto laboriosam laborum nihil nulla odio placeat praesentium quisquam quod repellat sequi
+                        tempora totam. Assumenda, voluptatum.</p>
+                </div>
+                <div class="d-flex px-4 py-3">
+                    <button><img src="" alt="">Удалить</button>
+                    <button class="gray-button ml-4"><img src="" alt="">Отмена</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-element conversion-statistics w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class=" px-4 py-3 text-center text-uppercase font-weight-bold">Список транзакций</h3>
+                <div class="d-flex align-items-end px-4 py-3">
+                    <p class="mb-0">Всего записей в списке: 30</p>
+                    <a class="ml-3" href="">Очистить все данные</a>
+                </div>
+                <div class="d-flex px-4 py-3">
+                    <form class="d-flex" action="">
+                        <input class="pl-2 mr-3" type="text" required>
+                        <button><img src="" alt="">Найти</button>
+                    </form>
+                    <button class="mx-3"><img src="" alt="">Сброс</button>
+                    <button class="green-button"><img src="" alt="">Скачать</button>
+                </div>
+                <div class="d-flex row justify-content-between px-4">
+                    <div class="item green-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">27041</h6>
+                        <p class="text-white text-center">Привлеченные клиенты в систему мною</p>
+                    </div>
+                    <div class="item light-green-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">27041</h6>
+                        <p class="text-white text-center">Привлеченные клиенты субпартнерами</p>
+                    </div>
+                    <div class="item blue-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">27041</h6>
+                        <p class="text-white text-center">Привлеченные клиенты в систему мною</p>
+                    </div>
+                    <div class="item orange-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">30%</h6>
+                        <p class="text-white text-center">Коммисия с привлеченных мной клиентов</p>
+                    </div>
+                    <div class="item dark-blue-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">49551</h6>
+                        <p class="text-white text-center">Количество переходов по реф. ссылке</p>
+                    </div>
+                    <div class="item red-item d-flex flex-column align-items-center p-3">
+                        <h6 class="text-white text-center">58%</h6>
+                        <p class="text-white text-center">Процент конверсий визитов к регистрациям</p>
+                    </div>
+                </div>
+                <table id="myTable2">
+                    <tr>
+                        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                        <th></th>
+                        <th onclick="sortTable2(1)">ID</th>
+                        <th></th>
+                        <th onclick="sortTable2(3)">Домен</th>
+                        <th onclick="sortTable2(4)">Клики</th>
+                        <th onclick="sortTable2(5)">Регистрация</th>
+                        <th onclick="sortTable2(6)">Установки</th>
+                        <th onclick="sortTable2(7)">Оплаты</th>
+                    </tr>
+                    <tr>
+                        <td><img src="" alt=""></td>
+                        <td>0001</td>
+                        <td><img src="" alt=""></td>
+                        <td>yandex.ru</td>
+                        <td>нет</td>
+                        <td>18 700,00</td>
+                        <td>нет</td>
+                        <td>18 700,00 USD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="" alt=""></td>
+                        <td>213124</td>
+                        <td><img src="" alt=""></td>
+                        <td>wows.ru</td>
+                        <td>100</td>
+                        <td>5 850,00</td>
+                        <td>100</td>
+                        <td>5 850,00 USD</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="content-element money-withdraw w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="text-center text-uppercase font-weight-bold p-4">ВЫВОД ДЕНЕГ</h3>
+                <div class="badge-inform d-flex flex-column p-4">
+                    <h4 class="font-weight-bold text-white">Заявки принимаются каждый понедельник</h4>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
+                        fugiat hic iste nulla!
+                        Accusamus animi architecto commodi consectetur dolores ducimus eaque, est fugiat iusto minima
+                        nesciunt non, obcaecati quae.</p>
+                </div>
+                <form class="p-4" action="">
+                    <h4 class="">Вывод денег</h4>
+                    <h5 class="font-weight-bold">Z кошелек WEBMONEY</h5>
+                    <input class="input-form" type="text" required placeholder="Введите номер кошелька Z">
+                    <p class="mt-3">Кошелек на который вам будет выслан перевод денег</p>
+                    <h5 class="font-weight-bold">Email</h5>
+                    <input class="input-form" type="text" required placeholder="demo@gmail.com">
+                    <p class="mt-3">Электронный адрес для связки</p>
+                    <h5 class="font-weight-bold">Сумма</h5>
+                    <input class="input-form" type="number" required placeholder="8412,00">
+                    <p class="mt-3">Баланс вашего счета 8531,00 USD</p>
+                    <div class="form-check px-5 py-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Вывод денег на Z кошелек WEBMONEY
+                        </label>
+                    </div>
+                    <div class="form-check px-5 py-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Перевод денег на внутренний счет, для оплаты услуг
+                        </label>
+                    </div>
+                    <button class="button-send">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="content-element my-payments w-100 h-100">
+            <div class="d-flex flex-column">
+                <h3 class="p-4 text-center text-uppercase font-weight-bold">мои выплаты</h3>
+                <div class="payment px-4 py-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore ex iusto laborum
+                    mollitia nihil repellat repudiandae suscipit. Dolore temporibus, velit! Beatae cupiditate eos facere
+                    hic, minus necessitatibus numquam odit officia, quas quasi rem rerum sequi sunt unde voluptas?
+                    Dolorum et eveniet fugit harum incidunt, magnam non pariatur quis vitae?
+                </div>
+            </div>
+        </div>
+        <div class="content-element banners-code w-100 h-100">
+            <div class="d-flex flex-column">
+                Коды баннеров
+            </div>
+        </div>
+        <div class="content-element map-section w-100 h-100">
+            <div class="d-flex flex-column">
+                <a class="dg-widget-link"
+                   href="http://2gis.kz/almaty/firm/70000001030250478/center/76.91225767135622,43.24951655317011/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+                    на карте Алматы</a>
+                <div class="dg-widget-link"><a
+                        href="http://2gis.kz/almaty/center/76.912264,43.249326/zoom/16/routeTab/rsType/bus/to/76.912264,43.249326╎A-LUX, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+                    проезд до A-LUX, компания</a></div>
+                <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                <script charset="utf-8">new DGWidgetLoader({
+                    "width": 640,
+                    "height": 600,
+                    "borderColor": "#a3a3a3",
+                    "pos": {"lat": 43.24951655317011, "lon": 76.91225767135622, "zoom": 16},
+                    "opt": {"city": "almaty"},
+                    "org": [{"id": "70000001030250478"}]
+                });</script>
+                <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript.
+                    Включите его в настройках вашего браузера.
+                </noscript>
+            </div>
+        </div>
+        <div class="content-element ask-question w-100 h-100">
+            <div class="d-flex flex-column">
+                Задать вопрос поддержке
+            </div>
+        </div>
+    </div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script>
+    $('.content-element').hide();
+    $("body").find('.content-element').eq(0).show();
+    $(document).ready(function () {
+
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+
+        $('.menu-element').click(function (event) {
+            var x = event.currentTarget.id;
+            $('.menu-element').removeClass('active');
+            $('#' + x).addClass('active');
+            x = x.substring(7);
+            $('.content-element').hide();
+            $("body").find('.content-element').eq(x - 1).show();
+        })
+    });
+
+    //SORT TABLE
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("myTable");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+    function sortTable2(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("myTable2");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
